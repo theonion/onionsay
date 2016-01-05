@@ -1,7 +1,7 @@
 {
-  "name": "yosay",
-  "version": "1.1.0",
-  "description": "Tell Yeoman what to say",
+  "name": "onionsay",
+  "version": "1.0.0",
+  "description": "Tell Onion what to say (forked from yosay)",
   "license": "BSD-2-Clause",
   "keywords": [
     "cli-app",
@@ -15,9 +15,8 @@
     "message",
     "ansi"
   ],
-  "homepage": "http://yeoman.io",
   "author": "Yeoman",
-  "repository": "yeoman/yosay",
+  "repository": "theonion/yosay",
   "bin": "cli.js",
   "files": [
     "index.js",
