@@ -16,7 +16,7 @@ var defaultGreeting = onion.split("\n").map(function (line) {
 }).join("\n");
 
 module.exports = function (message, options) {
-  message = (message || 'Welcome to Yeoman, ladies and gentlemen!').trim();
+  message = (message || 'AMERICA\'S FINEST NEWS SOURCE!').trim();
   options = options || {};
 
   /*
