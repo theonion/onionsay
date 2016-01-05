@@ -8,18 +8,12 @@ var ansiStyles = require('ansi-styles');
 var ansiRegex = require('ansi-regex')();
 var repeating = require('repeating');
 
-var topOffset = 3;
+var topOffset = 10;
 var leftOffset = 17;
-var defaultGreeting =
-  '\n     _-----_' +
-  '\n    |       |    ' +
-  '\n    |' + chalk.red('--(o)--') + '|    ' +
-  '\n   `---------´   ' +
-  '\n    ' + chalk.yellow('(') + ' _' + chalk.yellow('´U`') + '_ ' + chalk.yellow(')') + '    ' +
-  '\n    /___A___\\    ' +
-  '\n     ' + chalk.yellow('|  ~  |') + '     ' +
-  '\n   __' + chalk.yellow('\'.___.\'') + '__   ' +
-  '\n ´   ' + chalk.red('`  |') + '° ' + chalk.red('´ Y') + ' ` ';
+var onion = "                    /   \n                    /// \n                    ////\n          ////////////  \n      //// ///     //   \n   //// ///     /////   \n  /// ///     //// //   \n /// //      ///   //   \n ////       ///   ///   \n ////     ////    ///   \n ///      ///    ////   \n ///     ///    /////   \n  //    ///  ///// //   \n   //  ////////// ///   \n   //////        ///    \n  ////////   //////     \n   ///  /////////       ";
+var defaultGreeting = onion.split("\n").map(function (line) {
+	return chalk.green(line) + "   ";
+}).join("\n");
 
 module.exports = function (message, options) {
   message = (message || 'Welcome to Yeoman, ladies and gentlemen!').trim();
