@@ -1,6 +1,6 @@
-# yosay [![Build Status](https://travis-ci.org/yeoman/yosay.svg?branch=master)](https://travis-ci.org/yeoman/yosay)
+# onionsay[![Build Status](https://travis-ci.org/theonion/onionsay.svg?branch=master)](https://travis-ci.org/theonion/onionsay)
 
-> Tell Yeoman what to say
+> Tell The Onion what to say
 
 Like [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.
 
@@ -10,59 +10,76 @@ Like [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.
 ## Install
 
 ```
-$ npm install --save yosay
+$ npm install --save theonion/onionsay
 ```
 
 
 ## Usage
 
 ```js
-var yosay = require('yosay');
+var onionsay = require('onionsay');
 
-console.log(yosay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));
+console.log(onionsay('AMERICA\'S FINEST NEWS SOURCE!'));
 
 /*
-     _-----_
-    |       |    .--------------------------.
-    |--(o)--|    | Hello, and welcome to my |
-   `---------´   | fantastic generator full |
-    ( _´U`_ )    |   of whimsy and bubble   |
-    /___A___\    |           gum!           |
-     |  ~  |     '--------------------------'
-   __'.___.'__
- ´   `  |° ´ Y `
+                    /      
+                    ///    
+                    ////   
+          ////////////     
+      //// ///     //      
+   //// ///     /////      
+  /// ///     //// //      
+ /// //      ///   //      
+ ////       ///   ///      
+ ////     ////    ///      .--------------------------.
+ ///      ///    ////      |   AMERICA'S FINEST NEWS  |
+ ///     ///    /////      |          SOURCE!         |
+  //    ///  ///// //      '--------------------------'
+   //  ////////// ///      
+   //////        ///       
+  ////////   //////        
+   ///  /////////          
  */
 ```
 
-*You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `yosay`.*
+*You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `onionsay`.*
 
 
 ## CLI
 
 ```
-$ npm install --global yosay
+$ npm install --global theonion/onionsay
 ```
 
 ```
-$ yosay --help
+$ onionsay --help
+
+  Tell Onion what to say (forked from yosay)
 
   Usage
-    yosay <string>
-    yosay <string> --maxLength 8
-    echo <string> | yosay
+    onionsay <string>
+    onionsay <string> --maxLength 8
+    echo <string> | onionsay
 
   Example
-    yosay 'Sindre is a horse'
-
-     _-----_
-    |       |    .--------------------------.
-    |--(o)--|    |     Sindre is a horse    |
-   `---------´   '--------------------------'
-    ( _´U`_ )
-    /___A___\
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
+    onionsay "TU STULTUS ES"
+                    /      
+                    ///    
+                    ////   
+          ////////////     
+      //// ///     //      
+   //// ///     /////      
+  /// ///     //// //      
+ /// //      ///   //      
+ ////       ///   ///      
+ ////     ////    ///      .--------------------------.
+ ///      ///    ////      |       TU STULTUS ES      |
+ ///     ///    /////      '--------------------------'
+  //    ///  ///// //      
+   //  ////////// ///      
+   //////        ///       
+  ////////   //////        
+   ///  /////////          
 ```
 
 
