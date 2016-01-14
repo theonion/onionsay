@@ -23,7 +23,7 @@ module.exports = function (message, options) {
    * What you're about to see may confuse you. And rightfully so. Here's an
    * explanation.
    *
-   * When yosay is given a string, we create a duplicate with the ansi styling
+   * When onionsay is given a string, we create a duplicate with the ansi styling
    * sucked out. This way, the true length of the string is read by `pad` and
    * `wrap`, so they can correctly do their job without getting tripped up by
    * the "invisible" ansi. Along with the duplicated, non-ansi string, we store
